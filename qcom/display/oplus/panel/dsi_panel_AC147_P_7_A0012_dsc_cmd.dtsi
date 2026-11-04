@@ -185,6 +185,16 @@
 					/* HBM Mode OFF */
 					39 00 00 00 09 00 03 51 0D BB
 				];
+				qcom,mdss-dsi-lhbm-pressed-icon-on-command = [
+					/* LHBM ON */
+					39 00 00 40 00 00 04 FF 78 38 00
+					39 00 00 00 00 00 02 95 11
+				];
+				qcom,mdss-dsi-lhbm-pressed-icon-off-command = [
+					/* LHBM OFF */
+					39 00 00 40 00 00 04 FF 78 38 00
+					39 00 00 00 00 00 02 95 10
+				];
 				qcom,mdss-dsi-lp1-command = [
 					/* AOD Mode ON */
 					39 00 00 40 00 00 04 FF 78 38 00
@@ -234,6 +244,8 @@
 				qcom,mdss-dsi-esd-switch-page-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-hbm-on-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-hbm-off-command-state = "dsi_lp_mode";
+				qcom,mdss-dsi-lhbm-pressed-icon-on-command-state = "dsi_lp_mode";
+				qcom,mdss-dsi-lhbm-pressed-icon-off-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-lp1-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-nolp-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-aod-high-mode-command-state = "dsi_lp_mode";
@@ -390,6 +402,16 @@
 					/* HBM Mode OFF */
 					39 00 00 00 0C 00 03 51 0D BB
 				];
+				qcom,mdss-dsi-lhbm-pressed-icon-on-command = [
+					/* LHBM ON */
+					39 00 00 40 00 00 04 FF 78 38 00
+					39 00 00 00 00 00 02 95 11
+				];
+				qcom,mdss-dsi-lhbm-pressed-icon-off-command = [
+					/* LHBM OFF */
+					39 00 00 40 00 00 04 FF 78 38 00
+					39 00 00 00 00 00 02 95 10
+				];
 				qcom,mdss-dsi-lp1-command = [
 					/* AOD Mode ON */
 					39 00 00 40 00 00 04 FF 78 38 00
@@ -439,6 +461,8 @@
 				qcom,mdss-dsi-esd-switch-page-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-hbm-on-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-hbm-off-command-state = "dsi_lp_mode";
+				qcom,mdss-dsi-lhbm-pressed-icon-on-command-state = "dsi_lp_mode";
+				qcom,mdss-dsi-lhbm-pressed-icon-off-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-lp1-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-nolp-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-aod-high-mode-command-state = "dsi_lp_mode";
@@ -591,6 +615,16 @@
 					/* HBM Mode OFF */
 					39 00 00 00 11 00 03 51 0D BB
 				];
+				qcom,mdss-dsi-lhbm-pressed-icon-on-command = [
+					/* LHBM ON */
+					39 00 00 40 00 00 04 FF 78 38 00
+					39 00 00 00 00 00 02 95 11
+				];
+				qcom,mdss-dsi-lhbm-pressed-icon-off-command = [
+					/* LHBM OFF */
+					39 00 00 40 00 00 04 FF 78 38 00
+					39 00 00 00 00 00 02 95 10
+				];
 				qcom,mdss-dsi-lp1-command = [
 					/* AOD Mode ON */
 					39 00 00 40 00 00 04 FF 78 38 00
@@ -641,6 +675,8 @@
 				qcom,mdss-dsi-esd-switch-page-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-hbm-on-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-hbm-off-command-state = "dsi_lp_mode";
+				qcom,mdss-dsi-lhbm-pressed-icon-on-command-state = "dsi_lp_mode";
+				qcom,mdss-dsi-lhbm-pressed-icon-off-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-lp1-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-nolp-command-state = "dsi_lp_mode";
 				qcom,mdss-dsi-aod-high-mode-command-state = "dsi_lp_mode";
@@ -687,7 +723,7 @@
 	qcom,ulps-enabled;
 	qcom,dsi-select-clocks = "pll_byte_clk0", "pll_dsi_clk0";
 	/* ofp config */
-	oplus,ofp-fp-type = <0x08>;
+	oplus,ofp-fp-type = <0x18>;
 	oplus,ofp-longrui-aod-config = <0x06>;
 	oplus,ofp-need-to-wait-data-before-aod-on;
 	oplus,dozedisable-esdcheck-delay;
